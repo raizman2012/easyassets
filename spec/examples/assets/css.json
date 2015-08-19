@@ -1,0 +1,19 @@
+{
+  "dependencies": [
+    "./public/lib/bootstrap/dist/css/bootstrap.css",
+    "./public/lib/font-awesome/css/font-awesome.css",
+    "./public/lib/highlightjs/styles/github.css"
+  ],
+  "src": [
+    "./public/css/*.css",
+    "./public/generated_css/*.css"
+  ],
+  "generated_src": [
+    "./public/generated_css/*.css"
+  ],
+  "rtl_src": [
+    "./public/lib/bootstrap/dist/css/bootstrap.css",
+    "./public/css/*.css",
+    "./public/generated_css/*.css"
+  ]
+}

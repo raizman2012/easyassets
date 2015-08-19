@@ -1,0 +1,20 @@
+{
+  "name": "easyassets",
+  "description": "utility for easy static asset management",
+  "version": "0.0.1",
+  "private": false,
+  "scripts": {},
+  "dependencies": {
+    "glob": "~4.0.5",
+    "jsonfile": "^2.2.1",
+    "lodash": "~2.4.1",
+    "underscore": "^1.8.2"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-cli": "~0.1.6",
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-jasmine-node": "0.0.6",
+    "proxyquire": "~0.4.0"
+  }
+}
