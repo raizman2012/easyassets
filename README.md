@@ -4,14 +4,9 @@
 There is ONE usage of easyassets: manage lists of static assets. Developer defines entries with '*' character
 and this is translated to list of files.
 
-# Processing
+# Why and where to use
 
-With assetify, you work on your sources, and then generate output that is meant to be consumed by your users. `assetify` is **middleware-based**, and you can _extend it with plugins_ of your own.
-
-Here is a sample folder structure for your public static assets:
-
-![static.png][1]
-
+With easyassets, you work on your sources, and then generate output that is meant to be consumed by your users.
 `easyassets` will take your definition file and give you list of resources as an array. Let's walk through a basic example.
 
 We start off by installing `easyassets`
@@ -44,13 +39,8 @@ This is a simple configuration file:
 
 Let me explain the format. You group your assets into groups. 'dependencies', 'src' are names of the groups
 
-### # assets.source
 
-The `source` directory is the base directory where your static assets are.
-Don't worry, assetify supports referencing assets outside of this directory, but it will be used as the base directory
-for relatively referenced assets.
-
-## Build Step
+## Example
 
 Now that you know how to configure your assets hash, here's how you use it.
 
@@ -76,13 +66,14 @@ var list = easyAssetsInstance.get(['src', 'tests']);
 ```
 
 
-## add more files
+## add more files: its easy.
 
 Sometimes you may want to add more definition files
 
 ```js
+
 easyAssetsInstance.loadFile('anotherfile.json', { prefix: 'some/prefix'});
-If you want to add more forwarded extensions, you could set `concat` to true. It doesn't have to be limited to image extensions, they can be anything.
+
 ```
 
 ## Common use cases
